@@ -1,0 +1,21 @@
+.inner-header{
+    background-color: red;
+height: 100px;
+}
+.inner-h1 {
+    background-color: white;
+    font-size: 24px;
+
+}
+.inner-main{
+    background-color: blue;
+    font-size: 18px;
+    height: 300px;
+    color: #fff;
+    }
+.inner-footer {
+    background-color: green;
+    font-size: 18px;
+    height: 100px;
+    color: #fff;
+}
