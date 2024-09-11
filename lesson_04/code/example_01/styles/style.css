@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    /* границы внешние */
+    padding: 50;
+}
+
+.inner {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+
+}
+
+.inner2 {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.external {
+    background-color: brown;
+    width: 250px;
+    padding: 10px;
+
+    border: dashed 10px aqua;
+
+
+
+    /* border-width: 10px; (границы средние между margin and padding)
+    border-color: aqua;
+    border-style: solid; */
+
+    margin: 50px;
+    /* height: 250px; */
+    /* padding: 10px; */
+
+
+    /* padding-top: 10px; - отталкиваются друг от друга (внутренние)
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px; */
+
+    /* padding: 10px;  */
+    /* для всех значений 4 */
+    /* padding: 10px 10px; */
+    /* 1- для верха и низа
+ 2- для левой и правой  */
+    /* 
+ padding: 10px 10px 10px; */
+
+    /* 1- для верха
+ 2- для левой и правой 
+ 3- для низа */
+
+    /* padding: 10px 10px 10px 10px; */
+
+    /* по часовой стрелке - верх право низ лево */
+
+
+}

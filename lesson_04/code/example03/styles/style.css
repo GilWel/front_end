@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.block{
+    background-color: aquamarine;
+    /* height: 100vh;
+    width: 100vw; */
+    width: 100%;
+}
+.outer_p.inner_P {
+    margin: 15px 0;
+    font-size: 1.5 rem;
+}

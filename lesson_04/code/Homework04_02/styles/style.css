@@ -1,0 +1,15 @@
+
+.external {
+    background-color: black;
+    height: 400px;
+    width: 800px;
+}
+
+button {
+    background-color: blue;
+    height: 200px;
+    width: 600px;
+    margin: 100px;
+
+
+}

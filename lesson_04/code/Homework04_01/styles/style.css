@@ -1,0 +1,29 @@
+*{ 
+    margin: 0;
+    padding: 10px;
+    /* box-sizing: border-box;
+    border:solid 0px white; */
+    text-align: center;
+    font-size: 24px;
+  
+}
+.header {
+    background-color: burlywood;
+     height: 150px;
+    
+   
+}
+.main {
+    
+    background-color: blueviolet;
+      height: 450px;
+
+
+}
+.folder {
+    background-color: burlywood;
+    height: 150px;
+     
+   
+  
+}
