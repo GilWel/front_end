@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    background-color: gray;
+    margin: 50px;
+    position: relative;
+
+} 
+header {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+    margin-top: 50px;
+    height: 50px;
+    z-index:20;
+    
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+}
+.blue {
+    background-color: blue;
+    
+   
+}
+/* .red {
+    background-color: red;
+    position: relative;
+    left: 125px;
+    top: 50px;
+}
+    /* bottom: 60px; сдвигаем вверх*/ 
+
+.red {
+    background-color: red;
+    position: absolute;
+    bottom:10px;
+    right:  10px;
+
+}
+
+.yellow {
+    background-color: yellow;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}

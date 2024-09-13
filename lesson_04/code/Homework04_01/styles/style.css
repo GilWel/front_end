@@ -9,20 +9,23 @@
 }
 .header {
     background-color: burlywood;
-     height: 150px;
+     height: 15vh;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+
     
    
 }
 .main {
     
     background-color: blueviolet;
-      height: 450px;
+      height:calc(100vh - 50vh);
 
 
 }
 .folder {
     background-color: burlywood;
-    height: 150px;
+    height: 15vh;
      
    
   

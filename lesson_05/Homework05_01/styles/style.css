@@ -1,0 +1,19 @@
+.block {
+    background-color: white;
+    height: 100vh;
+    margin: 10px;
+    position: relative;
+    border:solid 2px black;
+    border-radius:5px;
+    background: linear-gradient(white,black);
+}
+.text {
+    background-color: yellow;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    right: 10px;
+    font-size: 150px;
+    
+    
+}
