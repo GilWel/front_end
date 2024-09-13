@@ -1,6 +1,6 @@
 *{ 
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     /* box-sizing: border-box;
     border:solid 0px white; */
     text-align: center;
@@ -9,7 +9,7 @@
 }
 .header {
     background-color: burlywood;
-     height: 15vh;
+     height: 150px;
      border-top-left-radius: 20px;
      border-top-right-radius: 20px;
 
@@ -19,13 +19,14 @@
 .main {
     
     background-color: blueviolet;
-      height:calc(100vh - 50vh);
+      height:calc(100vh - 300px - 20px);
+      margin: 10px 0 10px 0;
 
 
 }
-.folder {
+.footer {
     background-color: burlywood;
-    height: 15vh;
+    height: 150px;
      
    
   
