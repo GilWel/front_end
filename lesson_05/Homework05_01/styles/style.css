@@ -1,11 +1,12 @@
 .block {
     background-color: white;
     height: 100vh;
+    width:calc(100wh - 250px) ;
     margin: 10px;
     position: relative;
     border:solid 2px black;
     border-radius:5px;
-    background: linear-gradient(white,black);
+    background: linear-gradient(white, black);
 }
 .text {
     background-color: yellow;

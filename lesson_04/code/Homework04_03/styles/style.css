@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+.block {
+    background-color: lightblue;
+    height: 100vh;
+    padding: 20px;
+   
+
+
+}
+.block2{
+    background-color: lightblue;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    /* border: solid gold; */
+    /* position: absolute; */
+}
+
+.text {
+    background-color: yellow;
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+    top: 20%;
+    left: 40%;
+    transform: rotate(45deg);
+   
+ }
+
+ hr {
+   size: 3px;  width:100% align left;
+   top: 20px;
+ }
+ 
+ /* .vertical-line{
+    background-color: gold;
+    display: inline-block;
+    width: 0;
+    height: 30px;
+    border-bottom: -10px;
+   
+    
+}
+.horizontal-line{
+    background-color: gold;
+    display: inline-block;
+    height: 100vh;
+    /* width: 2px; */
+    /* border-top: 1px;
+} */ 
+
