@@ -4,9 +4,9 @@
     background-color: cornsilk;
     background-image: url("../images/cat2.png");
     background-repeat: no-repeat;
-    /* repeat-y; no-repeat */
+    /* repeat-y - по оси у или х - повторяется; no-repeat - чтобы не повторялся */
     /* background-position: left center; */
-    background-position:center;
+    background-position: center;
     /* можно в % х */
     background-size: 25%;
     position: relative;
@@ -15,6 +15,7 @@
     background-image: url("../images/cat.png"); 
     background-repeat: no-repeat;
     background-size: contain;
+    /* contain - уместить (сжать), cover -заполнение всего блока (части отделные)*/
     background-position: center;
 }
 .block {

@@ -1,0 +1,22 @@
+.container {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+     gap: 0px;
+    flex-wrap: wrap;
+      height: 150px;
+
+}
+.item{
+    width:calc(100%/3);
+    /* display: flex; */
+}
+.a {
+    background-color: blue;
+}
+.b {
+    background-color: brown;
+}
+.c {
+    background-color: chartreuse;
+}
