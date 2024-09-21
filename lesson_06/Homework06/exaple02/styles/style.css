@@ -1,11 +1,9 @@
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     text-align: center;
-    font-size: 24px;
-    text-align: center;
     font-size: 30px;
-    justify-content: center;
+ 
  
 }
 .header {
@@ -43,7 +41,7 @@
 }
 .article{
     background-color:lightpink;
-    border-radius: 5px;
+        border-radius: 5px;
     height: calc((100vh - 385px)/2);
     margin: 5px 0 0 0;
 }
