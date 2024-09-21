@@ -52,7 +52,7 @@
         background:linear-gradient(180deg, transparent, black);
     }
     .year {
-        font-size: 64px;
+        font-size: 30px;
         font-style: normal;
         font-weight: bold;
         color: white;
@@ -68,6 +68,7 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
+        line-clamp: 5;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-line-clamp: 0.3s ease;
