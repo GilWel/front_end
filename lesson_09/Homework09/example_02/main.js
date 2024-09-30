@@ -8,6 +8,7 @@ for (i = 0; i < 10; i++) {
    
 console.log(arrayB);
    const firstElemofarrayB = arrayB[0];
-   arrayB.shift();
+   const lastElemOfarrayB = arrayB[10]
+   arrayB.shift(lastElemOfarrayB);
    arrayB.push(firstElemofarrayB);
 console.log(arrayB);
