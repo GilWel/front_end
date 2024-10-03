@@ -1,6 +1,6 @@
 const time = "08:30";
 
-let arrC= time.split(':');
+let arrC = time.split(':');
 
 console.log(arrC);
 
