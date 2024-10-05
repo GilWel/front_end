@@ -7,13 +7,13 @@
 
 const  quadratNumber = (number) =>{
 
-    if (!Number.isInteger(number)) {
+    // if (!Number.isInteger(number)) {
         number = Math.floor(number);
-    } else {
-        number = number;
-    }
+    // } else {
+    //     number = number;
+    // }
 
    return (Math.pow(number,2));
 }
 
-console.log(quadratNumber(5.6));
+console.log(quadratNumber(3.9));

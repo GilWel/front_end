@@ -1,28 +1,18 @@
 //Создайте ф-цию, которая ищет сумму всех четных чисел в заданном промежутке
-
 // Аргументы функции два - начало промежутка и конец промежутка
 // Если число не целое - скруглить его в меньшую сторону
 // На заданном промежутке ф-ция должна найти и сложить все четные числа и вернуть сумму
 
 function res(min, max) {
 
-    if (!Number.isInteger(min, max)) {
-        min = Math.floor(min);
-        max = Math.floor(max);
-    } else {
-        min = min;
-        max = max;
-    }
-    const arr = [];
+    min = Math.floor(min);
+    max = Math.floor(max);
     let sum = 0;
 
     for (let i = min; i <= max; i = i + 1) {
         if (i % 2 === 0) {
-            arr.push(i);
+            sum += i;
         }
-    }
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
     }
     return sum;
 }

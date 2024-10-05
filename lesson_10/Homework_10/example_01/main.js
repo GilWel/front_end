@@ -8,14 +8,14 @@
 
 function number(n) {
 
-    if (!Number.isInteger(n)) {
+    // if (!Number.isInteger(n)) {
         n = Math.floor(n);
-    } else {
-        n = n;
-    }
+    // } else {
+    //     n = n;
+    // }
     return n % 2 === 0 ? "even" : "odd";
 }
-console.log(number(10));
+console.log(number(24.6));
 
 
 

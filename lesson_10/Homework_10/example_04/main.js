@@ -19,23 +19,22 @@ function primeNumber(n) {
             return true;
         }
     }
-
 }
 console.log(primeNumber(7));
 
-function arrAllPimeNumbers (n){
-    const array = []; 
-for(let i = 1; i < n; i++ ){
-    if (primeNumber(i)) {
-        array.push(i);
+function arrAllPimeNumbers(n) {
+    const array = [];
+    for (let i = 1; i < n; i++) {
+        if (primeNumber(i)) {
+            array.push(i);
+        }
     }
-}
 
-return array;
+    return array;
 
 }
 
 const endNumber = 45;
 const resultArray = arrAllPimeNumbers(endNumber);
 
-console.log (`простые числа в промежутке с 1 до ${endNumber} сгруппированны в массив: [${resultArray} ]`);
+console.log(`простые числа в промежутке с 1 до ${endNumber} сгруппированны в массив: [${resultArray} ]`);
