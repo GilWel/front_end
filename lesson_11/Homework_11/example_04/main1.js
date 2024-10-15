@@ -12,17 +12,9 @@ function filter(objects) {
 
         result1[element[0]] = {value};
        
-
-
     });
 
     return result1;
-
-
-
-
-
-
 };
 
 
