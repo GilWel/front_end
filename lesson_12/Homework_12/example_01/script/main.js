@@ -11,7 +11,7 @@ function buttonClickHandler() {
     let s1 = inputElements[0].value;
     let s2 = inputElements[1].value;
 
-    if (s1 < 0||s2 < 0){
+    if (s1 <= 0||s2 <= 0){
         alert("Введите пожалуйста корректные данные");
      }
      
