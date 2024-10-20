@@ -47,7 +47,7 @@ const AllListElement = document.querySelector('ul');
 
 // AllListElement.append(...peopleModified);
 
-const peopleModified = peopleExtended.map(createNewListItem);
+const peopleModified = peopleExtended.map(creatlleNewListItem);
 
 function createNewListItem(human) {
     const newListItemElement = document.createElement('li');
@@ -55,7 +55,7 @@ function createNewListItem(human) {
     return newListItemElement;
 }
 
-AllListElement.append(...peopleModified.slice(0,5));
+AllListElement.append(...peopleModified);
 
 
 

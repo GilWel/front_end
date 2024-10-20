@@ -23,7 +23,8 @@ console.log('========================================');
 
 
 
-const arrOfPeople = [{ name: 'John', age: 12 },
+const arrOfPeople = [
+{ name: 'John', age: 12 },
 { name: 'Bred', age: 5 },
 { name: 'Patrick', age: 20 },
 { name: 'Cris', age: 40 }];
