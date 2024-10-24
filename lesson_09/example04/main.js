@@ -22,7 +22,7 @@ console.log(roundedNumberCeil);
 const pow = Math.pow(2,3);
 console.log(pow);
 
-// mit & max
+// min & max
 
 const maxNumber = Math.max(1298,365,897,4598);
 console.log(maxNumber);
