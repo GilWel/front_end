@@ -1,45 +1,54 @@
-const tasks = [ 
-    { text: 'Задача 1', isCompleted: false }, 
-    { text: 'Задача 2', isCompleted: true } 
-  ] 
-   
-   
+const tasks = [
+  { text: 'Задача 1', isCompleted: false },
+  { text: 'Задача 2', isCompleted: true }
+]
+
+
 const createTask = document.querySelector('#createTask');
 const createList = document.querySelector('.list');
 const inputTask = document.querySelector('.task-input');
-const all = document.getElementById('all');
-const completed = document.getElementById('completed');
-const uncompleted = document.getElementById('uncompleted');
-const completeTask = document.querySelectorAll('.list-item') 
+const completeTask = document.querySelectorAll('.list-item')
 
 
-createTask.addEventListener('click',buttonClickHandler);
+createTask.addEventListener('click', buttonClickHandler);
 
-function buttonClickHandler(){
-const newTask = document.createElement('li'); 
-newTask.classList.add('list-item');
-newTask.textContent = inputTask.value;
-newTask.addEventListener('click', taskHandler);
+function buttonClickHandler() {
+  const newTask = document.createElement('li');
+  newTask.classList.add('list-item','uncompleted');
+  newTask.textContent = inputTask.value;
+  newTask.addEventListener('click', taskHandler);
 
-createList.append(newTask);
-inputTask.value='';
+  createList.append(newTask);
+  inputTask.value = '';
 }
-function taskHandler(event){
-    event.target.classList.toggle('list-item_done');
+function taskHandler(event) {
+  event.target.classList.toggle('list-item_done');
+  event.target.classList.toggle('completed'); 
+  event.target.classList.toggle('uncompleted'); 
 }
 
 
-document.querySelector('.btn').addEventListener('click',filterTasksHandler());
-  
- const filterTasksHandler = (status) => { 
+document.getElementById('all').addEventListener('click', () =>filterTasksHandler('all'));
+document.getElementById('completed').addEventListener('click',() =>filterTasksHandler('completed'));
+document.getElementById('uncompleted').addEventListener('click',() =>filterTasksHandler('uncompleted'));
+ 
+let currentFilter = 'all';
 
-  createList.forEach(task => {
-    if (task.classList = 'list-item'&&'list-item list-item_done') {
-      status===all;
-  } else if (task.classList = 'list-item') {
-      status === completed;
-  } else if (task.classList = 'list-item_done') {
-     status === uncompleted; 
-  }
-});
+function filterTasksHandler(status) {
+  const tasks = document.querySelectorAll('.list-item');
+ currentFilter = status;
+
+  tasks.forEach(task => {
+    if (status === 'all') {
+      task.style.display = 'list-item';
+    } else if (status === 'completed') {
+      task.style.display = task.classList.contains('completed') ? 'list-item' : 'none';
+    } else if (status === 'uncompleted') {
+      task.style.display = task.classList.contains('uncompleted') ? 'list-item_done' : 'none';
+    }
+  });
 }
+
+
+
+
