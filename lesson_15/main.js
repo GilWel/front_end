@@ -42,9 +42,9 @@ function filterTasksHandler(status) {
     if (status === 'all') {
       task.style.display = 'list-item';
     } else if (status === 'completed') {
-      task.style.display = task.classList.contains('completed') ? 'list-item' : 'none';
+      task.style.display = task.classList.contains('completed') ? 'list-item_done' : 'none';
     } else if (status === 'uncompleted') {
-      task.style.display = task.classList.contains('uncompleted') ? 'list-item_done' : 'none';
+      task.style.display = task.classList.contains('uncompleted') ? 'list-item' : 'none';
     }
   });
 }
