@@ -1,0 +1,23 @@
+#block {
+    background-color: aqua;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    font-size: 50px;
+    border: solid 5px black;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(156, 226, 43);
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+input {
+    background-color:wheat;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
