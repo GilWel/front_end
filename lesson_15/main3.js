@@ -12,6 +12,9 @@ const completed = document.getElementById('completed');
 const uncompleted = document.getElementById('uncompleted');
 
 createTask.addEventListener('click', buttonClickHandler);
+all.addEventListener('click',()=>showTasks(tasks));
+completed.addEventListener('click', ()=> showTasks(tasks.filter(task => task.isDone)));
+uncompleted.addEventListener('click', () => showTasks(tasks.filter(task => !task.isDone)));
 
 function buttonClickHandler() {
     // trim - убирает пробелы (вдруг случайные)
@@ -29,6 +32,9 @@ function showTasks(tasksToShow) {
    newTask.classList.add('list-item');
    newTask.textContent = task.task;
     newTask.addEventListener('click', taskHandler);
+    if(task.isDone){
+        newTask.classList.add('list-item_done');
+    }
     return newTask;
    });
    
@@ -37,43 +43,17 @@ newTasks.forEach(element => {
    }); 
 }
 function taskHandler(event) {
-   event.target.classList.toggle('list-item_done');
+const clickedTaskText = event.target.textContent;
+const task = tasks.find (t => t.task === clickedTaskText);
+if(task){
+    task.isDone = !task.isDone;
+    showTasks(tasks);
+}
+showTasks(tasks);
+  
 
 }
 
 
 
 
-allButtonStatus.addEventListener('click', filterTasksHandler);
-
-function filterTasksHandler(event) {
-   
-   const status = event.target;
-   
-//поиск кнопки по id:
-   if (status.id === 'all' || status.id === 'completed' || status.id === 'uncompleted') {
-   
-       let filteredTasks = [];
-
-   if (status.id === 'all') {
-       filteredTasks = tasks;
-
-   }
-   else if (status.id === 'completed') {
-       filteredTasks = tasks.filter((task) => task.classList.contains('list-item_done'));
-
-   }
-   else if (status.id === 'uncompleted') {
-       filteredTasks = tasks.filter((task) => !task.classList.contains('list-item_done'));
-
-   };
-   showTasks(filteredTasks);
-   }
-}
-
-
-
-
-
-
-    
