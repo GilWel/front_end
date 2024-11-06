@@ -1,15 +1,14 @@
-const randomJokePromise = fetch('https://jsonplaceholder.typicode.com/todos');
-randomJokePromise
-    .then((resultOfRandom) => {
-        return resultOfRandom.json();
-    })
-    .then((body) => {
-        toDoListOfBody(body.slice(0, 15));
-    })
 
-    .catch((err) => {
-        console.log('Необходимо проверить ссылку или поправить код', err)
-    })
+const getToDpInfo = async () => {
+
+    const randomJokePromise = await fetch('https://jsonplaceholder.typicode.com/todos');
+
+     const resultOfRandom = await randomJokePromise.json();
+
+     toDoListOfBody(resultOfRandom.slice(0, 15));
+}
+getToDpInfo();
+
 const createTask = document.querySelector('#createTask');
 const createList = document.querySelector('.list');
 const inputTask = document.querySelector('.task-input');
